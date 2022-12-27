@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+        <form id="formulario">
+             <div>
+                 <label for="IngresoCliente">¿Es un nuevo cliente?</label>
+                 <select name="IngresoClientes" id="">
+                     <option value="si">Si</option>
+                     <option value="no">No</option>                     
+                 </select>
+             </div>
+                       
+            
+            <div id = "cargaClientes">
+                <h3>Ingresar datos de cliente</h3>
+                <label for="nombre">Nombre Cliente</label>
+                <input id="nombre" type="text" placeholder="Nombre">
+                <label for="telefono">Teléfono Cliente</label>
+                <input id="telefono" type="number" placeholder="Teléfono">
+    
+            </div>
+
+            <div>
+                <label for="Estilista">Estilista</label>
+                <select name="listaEstilistas" id="estilistas">
+                    <option value="">Florencia Rodriguez - Colorista</option>
+                    <option value="">Julia López - Colorista</option>
+                    <option value="">Barbara Duran - Manicura</option>
+                    <option value="">Lucía Alberti - Manicura</option>
+                    <option value="">Ezequiel Suárez - Barbero</option>
+                    <option value="">Marcos Sanchez - Barbero</option>
+                </select>    
+
+            </div>
+
+            <div>
+                <h3>Carga trabajos Realizados</h3>
+                <textarea name="" id="comentarios" cols="50" rows="10" placeholder="Comentarios sobre trabajo realizado"></textarea>
+            </div>
+
+            <!--SEGUNDA PARTE FORMULARIO, COMPRA PRODUCTOS -->
+            <div>
+                <label for="Productos">Productos adquiridos</label>
+                <select name="listaProductos" id="">
+                   <option value="">Shampoo Brillo Loreal</option>
+                   <option value="">Shampoo Color Redken</option>
+                   <option value="">Acondicionador Nutritivo Kerastase</option>
+                   <option value="">Acondicionador Nutritivo Loreal</option>
+                   <option value="">Baño de Crema reconstructor</option>
+                   <option value="">Serum Reconstructor</option>
+                </select>     
+                   
+                <button>Cargar</button>
+
+            </div>
+
+            <div>
+                <input type="submit" id="clienteSubmit" class="form-submit" value="Confirmar">
+            </div>
+
+            <h3>Datos nuevo Cliente</h3>
+            <button id="botonCargados">Información nuevo cliente</button>
+            <div id="datosCargadosCliente"></div>
+
+
+            </div>
+
+        
+
+
+        </form>
+
+ <script src="./main.js"></script>
+</body>
+</html>
+
