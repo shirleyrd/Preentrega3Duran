@@ -1,4 +1,5 @@
-    
+/*Formulario con datos básicos de cliente*/
+
 /*Constructor objetos / estilistas  productos utilizados */
 
 class Producto {
@@ -62,8 +63,10 @@ class Estilistas {
             },
         ];
     
+
+
  /***Almacenamiento de array estilistas***/
- 
+
  localStorage.setItem("listaEstilistas", JSON.stringify(listaEstilistas));
    
  
@@ -141,7 +144,8 @@ function estilistasSalon() {
    }
 
 let estilista = document.getElementById("estilistas");
-console.log(estilista);
+
+
 
 }
 
@@ -158,6 +162,9 @@ productos.forEach((producto) => {
    console.log(producto); 
 });
 
+
+
+//En el caso del listado de productos, posiblemente no los incluya o bien los pase a otra página tipo carrito**/git remote add origin https://github.com/shirleyrd/Preentrega3Duran.git
 /*Selección de productos*/
 
 let productoElegido = prompt("Ingrese el producto elegido");
